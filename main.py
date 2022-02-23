@@ -31,9 +31,9 @@ class Focus(QMainWindow):
         self.repaint()
 
     def draw_flag(self, qp):
-        a=randint(5,100)
-        qp.setBrush(QColor(255, 255, 0))
-        qp.drawEllipse(randint(0,500), randint(0,500-a), a, a)
+        a = randint(5, 100)
+        qp.setBrush(QColor(randint(0, 255), randint(0, 255), randint(0, 255)))
+        qp.drawEllipse(randint(0, 500), randint(0, 500 - a), a, a)
 
 
 if __name__ == '__main__':
